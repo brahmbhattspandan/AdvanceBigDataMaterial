@@ -1,0 +1,20 @@
+Classification :
+	What? 
+	How it works ?
+	Terminology
+	Features - type of?
+	Black vs white 
+	Preprocessing
+	Logictic
+	Sigmoid
+	Graph
+	Example
+	Types of Algo - Page 274
+	Evaluation vs auc
+
+
+Clustering :
+	Distances -
+		d = 􏰁\| (a1 –b1􏰂2)2 +􏰁a2 –b2􏰂2 +...+􏰁an –bn􏰂2
+	Vector
+	Kmeans

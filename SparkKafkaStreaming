@@ -1,0 +1,41 @@
+Working with Apache Kafka And Spark Streaming :
+
+1.Install Kafka and Spark.
+
+2. Lets start Kafka and see if its working.
+   All below commands needs to be run from kafka directory.
+
+	a. Start Zookeeper :
+	bin/zookeeper-server-start.sh config/zookeeper.properties
+
+	Zookeeper starts at localhost:2181
+
+	b. Start Kafka Broker :
+	bin/kakfa-server-start.sh config/server.properties
+
+	KafkaBroker starts on localhost:9092
+
+	c. Create Kafka Topic
+	bin/kafka-topic.sh --create --zookeeper localhost:2181 --replication-factor 1 --partitions 1 --topic kafkatopic
+
+	Creates a topic by name Kafkatopic
+
+	d. Start a Producer
+	bin/kafka-console-producer.sh --broker-list localhost:9092 --topic kafkatopic
+
+	Type in anything to send.
+
+	e. Start a Consumer :
+	bin/kafka-console-consumer.sh --zookeeper localhost:2181 --topic kafkatopic --from-beginning
+
+
+3. Lets run spark streaming with kafka
+   Run all below command from spark directory (use spark 1.4+)
+
+   a. Run the producer :
+   bin/run-example org.apache.spark.examples.streaming.KafkaWordCountProducer localhost:9092 kafkatopic 10 5 
+
+   This runs the producer
+
+   b. Run the word Count :
+   bin/run-example org.apache.spark.examples.streaming.KafkaWordCount localhost:2181 myconsumergroup kafkatopic 1

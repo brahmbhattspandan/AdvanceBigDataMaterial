@@ -1,0 +1,255 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437194648186_2050734829",
+      "id": "20150718-004408_1713095860",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": ""
+      },
+      "dateCreated": "Jul 18, 2015 12:44:08 AM",
+      "dateStarted": "Jul 18, 2015 12:46:04 AM",
+      "dateFinished": "Jul 18, 2015 12:46:04 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val a \u003d List(\"apple\", \"banana\", \"orange\")\nfor (e \u003c- a) {\n    val s \u003d e.toUpperCase\n    println(s)\n}\nfor ((e, count) \u003c- a.zipWithIndex) {\n    println(s\"$count is $e\")\n}",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437194789566_-29988867",
+      "id": "20150718-004629_2083216227",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "a: List[String] \u003d List(apple, banana, orange)\nAPPLE\nBANANA\nORANGE\n0 is apple\n1 is banana\n2 is orange\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:46:29 AM",
+      "dateStarted": "Jul 18, 2015 12:50:24 AM",
+      "dateFinished": "Jul 18, 2015 12:50:24 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "for (i \u003c- 1 to 10 if i \u003c 4) println(i)\nprintln(\"-----\")\nfor {\n    i \u003c- 1 to 10 if i !\u003d 1\n    if i % 2 \u003d\u003d 0\n} println(i)",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437194785503_390141608",
+      "id": "20150718-004625_753614655",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "1\n2\n3\n-----\n2\n4\n6\n8\n10\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:46:25 AM",
+      "dateStarted": "Jul 18, 2015 12:53:48 AM",
+      "dateFinished": "Jul 18, 2015 12:53:49 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val fruits \u003d \"apple\" :: \"banana\" :: \"orange\" :: Nil\nval out \u003d for (e \u003c- fruits) yield e.toUpperCase",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437194783249_-418600580",
+      "id": "20150718-004623_1987236289",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "fruits: List[String] \u003d List(apple, banana, orange)\nout: List[String] \u003d List(APPLE, BANANA, ORANGE)\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:46:23 AM",
+      "dateStarted": "Jul 18, 2015 12:58:08 AM",
+      "dateFinished": "Jul 18, 2015 12:58:08 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val a \u003d 5\nval absValue \u003d if (a \u003c 0) -a else a\ndef max(a: Int, b: Int) \u003d if (a \u003e b) a else b\nval c \u003d max(5,6)",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437194780477_667378643",
+      "id": "20150718-004620_1715362709",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "a: Int \u003d 5\nabsValue: Int \u003d 5\nmax: (a: Int, b: Int)Int\nc: Int \u003d 6\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:46:20 AM",
+      "dateStarted": "Jul 18, 2015 12:58:01 AM",
+      "dateFinished": "Jul 18, 2015 12:58:02 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val i \u003d 2\nval month \u003d i match {                   //Returns a value\n    case 1 \u003d\u003e \"January\" \n    case 2 \u003d\u003e \"February\" \n    case 3 \u003d\u003e \"March\"\n    case _ \u003d\u003e \"Invalid month\" // the default, catch-all\n}\ni match {                               //Does not return a value\ncase 1 | 3 | 5 | 7 | 9 \u003d\u003e println(\"odd\")\ncase 2 | 4 | 6 | 8 | 10 \u003d\u003e println(\"even\") \n}\ni match {\n    case a if 0 to 9 contains a \u003d\u003e println(\"0-9 range: \" + a) \n    case b if 10 to 19 contains b \u003d\u003e println(\"10-19 range: \" + b) \n    case c if 20 to 29 contains c \u003d\u003e println(\"20-29 range: \" + c) \n    case _ \u003d\u003e println(\"Hmmm...\")\n}\n",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437194777666_-34788100",
+      "id": "20150718-004617_991781280",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "i: Int \u003d 2\nmonth: String \u003d February\neven\n0-9 range: 2\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:46:17 AM",
+      "dateStarted": "Jul 18, 2015 1:03:07 AM",
+      "dateFinished": "Jul 18, 2015 1:03:07 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val li \u003d List(1,2,3,5,6)\nli match {\n    case n :: rest \u003d\u003e println(rest)\n    case Nil \u003d\u003e println(\"Done\")\n}",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437194775180_-557277106",
+      "id": "20150718-004615_60500739",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "li: List[Int] \u003d List(1, 2, 3, 5, 6)\nList(2, 3, 5, 6)\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:46:15 AM",
+      "dateStarted": "Jul 18, 2015 1:06:21 AM",
+      "dateFinished": "Jul 18, 2015 1:06:21 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437194770836_180271211",
+      "id": "20150718-004610_1615725145",
+      "dateCreated": "Jul 18, 2015 12:46:10 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437194764084_-1615367229",
+      "id": "20150718-004604_1319267221",
+      "dateCreated": "Jul 18, 2015 12:46:04 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Control Structures",
+  "id": "2ASJQ76PF",
+  "config": {
+    "looknfeel": "default"
+  },
+  "info": {}
+}

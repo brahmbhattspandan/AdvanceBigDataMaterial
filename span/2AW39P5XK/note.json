@@ -1,0 +1,198 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\n",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437196019341_1900278275",
+      "id": "20150718-010659_1759331712",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": ""
+      },
+      "dateCreated": "Jul 18, 2015 1:06:59 AM",
+      "dateStarted": "Jul 18, 2015 1:07:51 AM",
+      "dateFinished": "Jul 18, 2015 1:07:51 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val x \u003d List.range(1, 10)\nval evens \u003d x.filter((i: Int) \u003d\u003e i % 2 \u003d\u003d 0)\nval evens0 \u003d x.filter(i \u003d\u003e i % 2 \u003d\u003d 0)\nval evens1 \u003d x.filter(_ % 2 \u003d\u003d 0)\nx.foreach((i:Int) \u003d\u003e println(i))\nprintln(\"-----\")\nx.foreach((i) \u003d\u003e println(i))\nprintln(\"-----\")\nx.foreach(i \u003d\u003e println(i))\nprintln(\"-----\")\nx.foreach(println(_))\nprintln(\"-----\")\nx.foreach(println)\n",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437196086925_2133344164",
+      "id": "20150718-010806_310947469",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "x: List[Int] \u003d List(1, 2, 3, 4, 5, 6, 7, 8, 9)\nevens: List[Int] \u003d List(2, 4, 6, 8)\nevens0: List[Int] \u003d List(2, 4, 6, 8)\nevens1: List[Int] \u003d List(2, 4, 6, 8)\n1\n2\n3\n4\n5\n6\n7\n8\n9\n-----\n1\n2\n3\n4\n5\n6\n7\n8\n9\n-----\n1\n2\n3\n4\n5\n6\n7\n8\n9\n-----\n1\n2\n3\n4\n5\n6\n7\n8\n9\n-----\n1\n2\n3\n4\n5\n6\n7\n8\n9\n"
+      },
+      "dateCreated": "Jul 18, 2015 1:08:06 AM",
+      "dateStarted": "Jul 18, 2015 1:13:50 AM",
+      "dateFinished": "Jul 18, 2015 1:13:52 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val double \u003d (i: Int) \u003d\u003e { i * 2 }\ndouble(2)\nval list \u003d List.range(1, 5)\nlist.map(double)\n",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "editorHide": false,
+        "tableHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437196089475_10669157",
+      "id": "20150718-010809_1225543190",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "double: Int \u003d\u003e Int \u003d \u003cfunction1\u003e\nres82: Int \u003d 4\nlist: List[Int] \u003d List(1, 2, 3, 4)\nres83: List[Int] \u003d List(2, 4, 6, 8)\n"
+      },
+      "dateCreated": "Jul 18, 2015 1:08:09 AM",
+      "dateStarted": "Jul 18, 2015 1:13:56 AM",
+      "dateFinished": "Jul 18, 2015 1:13:57 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val sum \u003d (a: Int, b: Int, c: Int) \u003d\u003e a + b + c\nval f \u003d sum(1, 2, _: Int)\nf(3)",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437196092398_1402685221",
+      "id": "20150718-010812_228154529",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "sum: (Int, Int, Int) \u003d\u003e Int \u003d \u003cfunction3\u003e\nf: Int \u003d\u003e Int \u003d \u003cfunction1\u003e\nres85: Int \u003d 6\n"
+      },
+      "dateCreated": "Jul 18, 2015 1:08:12 AM",
+      "dateStarted": "Jul 18, 2015 1:16:00 AM",
+      "dateFinished": "Jul 18, 2015 1:16:01 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437196084403_1541600355",
+      "id": "20150718-010804_1512958362",
+      "dateCreated": "Jul 18, 2015 1:08:04 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437196081531_-1117045193",
+      "id": "20150718-010801_1493416524",
+      "dateCreated": "Jul 18, 2015 1:08:01 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437196078842_962153187",
+      "id": "20150718-010758_1534072295",
+      "dateCreated": "Jul 18, 2015 1:07:58 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437196076468_495068023",
+      "id": "20150718-010756_2108078451",
+      "dateCreated": "Jul 18, 2015 1:07:56 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437196071933_1096799978",
+      "id": "20150718-010751_138505603",
+      "dateCreated": "Jul 18, 2015 1:07:51 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Functional Programming",
+  "id": "2AW39P5XK",
+  "config": {
+    "looknfeel": "default"
+  },
+  "info": {}
+}

@@ -1,0 +1,364 @@
+{
+  "paragraphs": [
+    {
+      "text": "%md\nIn scala, Most useful data structure are : \nList\nMap\n\nAll of this are immutable.\n",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": false,
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437192780821_-1038680058",
+      "id": "20150718-001300_307259069",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003cp\u003eIn scala, Most useful data structure are :\n\u003cbr  /\u003eList\n\u003cbr  /\u003eMap\u003c/p\u003e\n\u003cp\u003eAll of this are immutable.\u003c/p\u003e\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:13:00 AM",
+      "dateStarted": "Jul 18, 2015 12:43:16 AM",
+      "dateFinished": "Jul 18, 2015 12:43:16 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val list \u003d 1 :: 2 :: 3 :: Nil                   // Create a new List. Also add item to a List.\nval list1 \u003d List(1, 2, 3)\nval x \u003d List.range(1, 10)\nval x1 \u003d List.range(0, 10, 2)\nval x2 \u003d List.fill(3)(\"foo\")\nval x3 \u003d List.tabulate(5)(n \u003d\u003e n * n)\n\"Spandan\".toList\nval y \u003d x :+ 12",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": true,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437192889907_1584354053",
+      "id": "20150718-001449_65042449",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "list: List[Int] \u003d List(1, 2, 3)\nlist1: List[Int] \u003d List(1, 2, 3)\nx: List[Int] \u003d List(1, 2, 3, 4, 5, 6, 7, 8, 9)\nx1: List[Int] \u003d List(0, 2, 4, 6, 8)\nx2: List[String] \u003d List(foo, foo, foo)\nx3: List[Int] \u003d List(0, 1, 4, 9, 16)\nres5: List[Char] \u003d List(S, p, a, n, d, a, n)\ny: List[Int] \u003d List(1, 2, 3, 4, 5, 6, 7, 8, 9, 12)\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:14:49 AM",
+      "dateStarted": "Jul 18, 2015 12:22:27 AM",
+      "dateFinished": "Jul 18, 2015 12:22:28 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "import scala.collection.mutable.ListBuffer                          //You need to specifically import ListBuffer.\nvar fruits \u003d new ListBuffer[String]()\nfruits +\u003d \"Apple\"\nfruits +\u003d (\"Strawberry\", \"Kiwi\", \"Pineapple\", \"Orange\")                       //  Mutable List use +\u003d. Immutable List use :+\nfruits -\u003d \"Apple\"\nfruits -\u003d (\"Banana\", \"Orange\")\nfruits\nval newFruits \u003d fruits.remove(0)\nfruits",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": true,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437193119084_1177967793",
+      "id": "20150718-001839_2018259164",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "import scala.collection.mutable.ListBuffer\nfruits: scala.collection.mutable.ListBuffer[String] \u003d ListBuffer()\nres30: scala.collection.mutable.ListBuffer[String] \u003d ListBuffer(Apple)\nres31: scala.collection.mutable.ListBuffer[String] \u003d ListBuffer(Apple, Strawberry, Kiwi, Pineapple, Orange)\nres32: scala.collection.mutable.ListBuffer[String] \u003d ListBuffer(Strawberry, Kiwi, Pineapple, Orange)\nres33: scala.collection.mutable.ListBuffer[String] \u003d ListBuffer(Strawberry, Kiwi, Pineapple)\nres34: scala.collection.mutable.ListBuffer[String] \u003d ListBuffer(Strawberry, Kiwi, Pineapple)\nnewFruits: String \u003d Strawberry\nres35: scala.collection.mutable.ListBuffer[String] \u003d ListBuffer(Kiwi, Pineapple)\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:18:39 AM",
+      "dateStarted": "Jul 18, 2015 12:25:14 AM",
+      "dateFinished": "Jul 18, 2015 12:25:15 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val a \u003d List(1,2,3)\nval b \u003d List(4,5,6)\nval c \u003d a ++ b\nval d \u003d a ::: b\n",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": true,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437193126423_-1828844861",
+      "id": "20150718-001846_489501614",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "a: List[Int] \u003d List(1, 2, 3)\nb: List[Int] \u003d List(4, 5, 6)\nc: List[Int] \u003d List(1, 2, 3, 4, 5, 6)\nd: List[Int] \u003d List(1, 2, 3, 4, 5, 6)\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:18:46 AM",
+      "dateStarted": "Jul 18, 2015 12:28:00 AM",
+      "dateFinished": "Jul 18, 2015 12:28:01 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "%md\nUsing Maps",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "editorHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437193675127_893451177",
+      "id": "20150718-002755_888812820",
+      "result": {
+        "code": "SUCCESS",
+        "type": "HTML",
+        "msg": "\u003cp\u003eUsing Maps\u003c/p\u003e\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:27:55 AM",
+      "dateStarted": "Jul 18, 2015 12:28:49 AM",
+      "dateFinished": "Jul 18, 2015 12:28:49 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val states \u003d Map(\"AL\" -\u003e \"Alabama\", \"AK\" -\u003e \"Alaska\")\nvar newStates \u003d collection.mutable.Map(\"AL\" -\u003e \"Alabama\")\n\n",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437193672260_642579570",
+      "id": "20150718-002752_1077858046",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "states: scala.collection.immutable.Map[String,String] \u003d Map(AL -\u003e Alabama, AK -\u003e Alaska)\nnewStates: scala.collection.mutable.Map[String,String] \u003d Map(AL -\u003e Alabama)\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:27:52 AM",
+      "dateStarted": "Jul 18, 2015 12:41:01 AM",
+      "dateFinished": "Jul 18, 2015 12:41:02 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "var states \u003d scala.collection.mutable.Map[String, String]()\nstates +\u003d (\"AL\" -\u003e \"Alabama\")                           //For Immutable Map use + to create a new Map\nstates +\u003d (\"AR\" -\u003e \"Arkansas\", \"AZ\" -\u003e \"Arizona\")\nstates -\u003d \"AR\"\nstates -\u003d (\"AL\", \"AZ\")\nstates",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437193669497_339012687",
+      "id": "20150718-002749_851890776",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "states: scala.collection.mutable.Map[String,String] \u003d Map()\nres45: scala.collection.mutable.Map[String,String] \u003d Map(AL -\u003e Alabama)\nres46: scala.collection.mutable.Map[String,String] \u003d Map(AZ -\u003e Arizona, AL -\u003e Alabama, AR -\u003e Arkansas)\nres47: scala.collection.mutable.Map[String,String] \u003d Map(AZ -\u003e Arizona, AL -\u003e Alabama)\nres48: scala.collection.mutable.Map[String,String] \u003d Map()\nres49: scala.collection.mutable.Map[String,String] \u003d Map()\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:27:49 AM",
+      "dateStarted": "Jul 18, 2015 12:40:53 AM",
+      "dateFinished": "Jul 18, 2015 12:40:54 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val states \u003d Map(\"AL\" -\u003e \"Alabama\", \"AK\" -\u003e \"Alaska\", \"AZ\" -\u003e \"Arizona\")\nval az \u003d states(\"AZ\")\n//val s \u003d states(\"FOO\")         //This gives exception\nval s \u003d states.getOrElse(\"FOO\", \"No such state\")\nval az \u003d states.get(\"AZ\")           //Returns an Option[String] object\nval az \u003d states.get(\"FOO\")          //Returns None\n",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": true
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437193665339_1907033021",
+      "id": "20150718-002745_731237670",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "states: scala.collection.immutable.Map[String,String] \u003d Map(AL -\u003e Alabama, AK -\u003e Alaska, AZ -\u003e Arizona)\naz: String \u003d Arizona\ns: String \u003d No such state\naz: Option[String] \u003d Some(Arizona)\naz: Option[String] \u003d None\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:27:45 AM",
+      "dateStarted": "Jul 18, 2015 12:40:47 AM",
+      "dateFinished": "Jul 18, 2015 12:40:48 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val ratings \u003d Map(\"Lady in the Water\"-\u003e 3.0, \"Snakes on a Plane\"-\u003e 4.0,\n\"You, Me and Dupree\"-\u003e 3.5)\nfor ((k,v) \u003c- ratings) println(s\"key: $k, value: $v\")\nratings.foreach {\ncase(movie, rating) \u003d\u003e println(s\"key: $movie, value: $rating\")\n}\nratings.foreach(x \u003d\u003e println(s\"key: ${x._1}, value: ${x._2}\"))\nval reverseMap \u003d for ((k,v) \u003c- ratings) yield (v, k)\n",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": true,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437193122503_-1377549726",
+      "id": "20150718-001842_495841534",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "ratings: scala.collection.immutable.Map[String,Double] \u003d Map(Lady in the Water -\u003e 3.0, Snakes on a Plane -\u003e 4.0, You, Me and Dupree -\u003e 3.5)\nkey: Lady in the Water, value: 3.0\nkey: Snakes on a Plane, value: 4.0\nkey: You, Me and Dupree, value: 3.5\nkey: Lady in the Water, value: 3.0\nkey: Snakes on a Plane, value: 4.0\nkey: You, Me and Dupree, value: 3.5\nkey: Lady in the Water, value: 3.0\nkey: Snakes on a Plane, value: 4.0\nkey: You, Me and Dupree, value: 3.5\nreverseMap: scala.collection.immutable.Map[Double,String] \u003d Map(3.0 -\u003e Lady in the Water, 4.0 -\u003e Snakes on a Plane, 3.5 -\u003e You, Me and Dupree)\n"
+      },
+      "dateCreated": "Jul 18, 2015 12:18:42 AM",
+      "dateStarted": "Jul 18, 2015 12:40:26 AM",
+      "dateFinished": "Jul 18, 2015 12:40:28 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437194325506_-1516716625",
+      "id": "20150718-003845_61608768",
+      "dateCreated": "Jul 18, 2015 12:38:45 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437194322748_-1823746247",
+      "id": "20150718-003842_894657066",
+      "dateCreated": "Jul 18, 2015 12:38:42 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437194320534_473758001",
+      "id": "20150718-003840_830681680",
+      "dateCreated": "Jul 18, 2015 12:38:40 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": false,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437193034400_844436469",
+      "id": "20150718-001714_311722846",
+      "dateCreated": "Jul 18, 2015 12:17:14 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "List Map Tutorial",
+  "id": "2ASUBJNK9",
+  "config": {
+    "looknfeel": "default"
+  },
+  "info": {}
+}

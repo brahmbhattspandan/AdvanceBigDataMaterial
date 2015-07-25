@@ -1,0 +1,182 @@
+{
+  "paragraphs": [
+    {
+      "text": "val a \u003d \"100\".toInt\ndef toInteger(s: String):Option[Int] \u003d { \n    try {\n        Some(s.toInt) \n    } catch {\n        case e: NumberFormatException \u003d\u003e None }\n}\nprintln(\"----\")\nprintln(toInteger(\"1\").getOrElse(0))\nprintln(toInteger(\"a12\").getOrElse(0))",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        }
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437196687891_-1039472579",
+      "id": "20150718-011807_952964529",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "a: Int \u003d 100\ntoInteger: (s: String)Option[Int]\n----\n1\n0\n"
+      },
+      "dateCreated": "Jul 18, 2015 1:18:07 AM",
+      "dateStarted": "Jul 18, 2015 1:21:27 PM",
+      "dateFinished": "Jul 18, 2015 1:21:43 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "var a \u003d 1\na +\u003d 1\nval r \u003d scala.util.Random\nr.nextInt\nr.nextInt(100)          //Set a max limit\nr.nextFloat",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437196869990_-555165659",
+      "id": "20150718-012109_1877358819",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "a: Int \u003d 1\nr: util.Random.type \u003d scala.util.Random$@dd9ada7\nres91: Int \u003d -1378952046\nres92: Int \u003d 20\nres93: Float \u003d 0.54927486\n"
+      },
+      "dateCreated": "Jul 18, 2015 1:21:09 AM",
+      "dateStarted": "Jul 18, 2015 1:24:32 AM",
+      "dateFinished": "Jul 18, 2015 1:24:32 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val r \u003d 1 to 10\nval r1 \u003d 1 to 10 by 2\nval r2 \u003d 1 until 10\nfor (i \u003c- 1 until 5) println(i)\nval x \u003d 1 to 10 toList\nval x1 \u003d 1.to(10)",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437197080221_-1067760107",
+      "id": "20150718-012440_1404725961",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "r: scala.collection.immutable.Range.Inclusive \u003d Range(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\nr1: scala.collection.immutable.Range \u003d Range(1, 3, 5, 7, 9)\nr2: scala.collection.immutable.Range \u003d Range(1, 2, 3, 4, 5, 6, 7, 8, 9)\n1\n2\n3\n4\nwarning: there were 1 feature warning(s); re-run with -feature for details\nx: List[Int] \u003d List(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\nx1: scala.collection.immutable.Range.Inclusive \u003d Range(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)\n"
+      },
+      "dateCreated": "Jul 18, 2015 1:24:40 AM",
+      "dateStarted": "Jul 18, 2015 1:29:45 PM",
+      "dateFinished": "Jul 18, 2015 1:29:46 PM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "val s \u003d \"Hello, world\"\nval s1: String \u003d \"Hello\"\nprintln(\"length of String is : \" + s.length)\nval result \u003d \"hello world\".filter(_ !\u003d \u0027l\u0027)\n\"scala\".drop(2).take(2).capitalize\n",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": false,
+        "editorHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437197077984_-1598328841",
+      "id": "20150718-012437_51021700",
+      "result": {
+        "code": "SUCCESS",
+        "type": "TEXT",
+        "msg": "s: String \u003d Hello, world\nlength of String is : 12\nresult: String \u003d heo word\nres100: String \u003d Al\n"
+      },
+      "dateCreated": "Jul 18, 2015 1:24:37 AM",
+      "dateStarted": "Jul 18, 2015 1:31:35 AM",
+      "dateFinished": "Jul 18, 2015 1:31:35 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "text": "\"hello world\".split(\" \").foreach(println)\nval s \u003d \"eggs, milk, butter, Coco Puffs\"\ns.split(\",\")\ns.split(\",\").map(_.trim)\n\"hello\"(1)",
+      "config": {
+        "colWidth": 12.0,
+        "graph": {
+          "mode": "table",
+          "height": 300.0,
+          "optionOpen": false,
+          "keys": [],
+          "values": [],
+          "groups": [],
+          "scatter": {}
+        },
+        "tableHide": false
+      },
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437197072237_-1094908713",
+      "id": "20150718-012432_1144109047",
+      "result": {
+        "code": "ERROR",
+        "type": "TEXT",
+        "msg": "hello\nworld\ns: String \u003d eggs, milk, butter, Coco Puffs\nres96: Array[String] \u003d Array(eggs, \" milk\", \" butter\", \" Coco Puffs\")\nres97: Array[String] \u003d Array(eggs, milk, butter, Coco Puffs)\n\u003cconsole\u003e:27: error: type mismatch;\n found   : String(\"hello\")\n required: ?{def apply: ?}\nNote that implicit conversions are not applicable because they are ambiguous:\n both method augmentString in object Predef of type (x: String)scala.collection.immutable.StringOps\n and method stringToLiteral in trait ExpressionConversions of type (s: String)org.apache.spark.sql.catalyst.expressions.Literal\n are possible conversion functions from String(\"hello\") to ?{def apply: ?}\n              \"hello\"(1)\n              ^\n\u003cconsole\u003e:27: error: String(\"hello\") does not take parameters\n              \"hello\"(1)\n                     ^\n"
+      },
+      "dateCreated": "Jul 18, 2015 1:24:32 AM",
+      "dateStarted": "Jul 18, 2015 1:31:30 AM",
+      "dateFinished": "Jul 18, 2015 1:31:31 AM",
+      "status": "FINISHED",
+      "progressUpdateIntervalMs": 500
+    },
+    {
+      "config": {},
+      "settings": {
+        "params": {},
+        "forms": {}
+      },
+      "jobName": "paragraph_1437197490714_-110167188",
+      "id": "20150718-013130_231039357",
+      "dateCreated": "Jul 18, 2015 1:31:30 AM",
+      "status": "READY",
+      "progressUpdateIntervalMs": 500
+    }
+  ],
+  "name": "Strings \u0026 Numbers",
+  "id": "2ATUA7R5E",
+  "config": {
+    "looknfeel": "default"
+  },
+  "info": {}
+}
